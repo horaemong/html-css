@@ -1,3 +1,11 @@
+div{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0px;
+}
+
 .main-background{
   width: 100%;
   height: 500px;
@@ -33,6 +41,7 @@
   position: absolute;
   bottom: 94px;
   right: 10px;
+  z-index: 5;
 }
 
 .sub-content{
@@ -46,7 +55,7 @@
   bottom: 140px;
   left: 20%;
   right: 20%;
-  margin-right: 10%;
+  z-index: 1;
 }
 
 .sub-content p{

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="form.css">
+  <link rel="stylesheet" href="../normalize.css/normalize.css">
+</head>
+
+<body>
+  <div class="main_background">
+    <h2>contact us</h2>
+    <div class="blank"></div>
+
+    <form class="all">
+      <p>Your Email</p>
+      <input type="email" placeholder="email@example.com">
+      <div class="name">
+        <div class="firstname">
+          <p>First name</p>
+          <input type="text">
+        </div>
+        <div class="lastname">
+          <p>Last name</p>
+          <input type="text">
+        </div>
+      </div>
+      
+      <div class="blank"></div>
+      <p>Message</p>
+      <input type="text" class="message">
+
+      <div class="check">
+        <input type="checkbox" name="Subscribe" id="sub">
+        <p class="subscribe">Subscribe</p> <!--이 줄은 label로 대체-->
+        <button>SEND</button>
+        <div class="blank"></div>
+      </div>
+      <div class="blank"></div>
+    </form>
+
+  </div>
+
+</body>
+
+</html>
+
+<!-- 
+이번 것을 만들면서 힘들었던 부분: name 부분
+이번 것을 만들면서 느낀점 : margin,padding을 막주지 말고,
+ css class의 통일감을 좀 더 늘리자. 우선순위 때문에 뒤지게 
+ 고생했다. 이 쓰레기 같은 css. 이번에 정했던 css 초기 설정은
+ box-sizing하고 배경에 margin, padding 넣은거 빼고는 버릴 듯
+ check 부분은 초기 설정만 안했어도 div박스 하나로 묶어 내가 원하는 데로 완성하고 만족하고 끌 수 있었을 텐데.
+오늘의 교훈 : 최대한 css의 재활용을 생각하고, 자신감 붙었다고 무턱대고 레이아웃을 만들지 말자, 정말 고생했다.
+-->
