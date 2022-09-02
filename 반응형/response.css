@@ -1,0 +1,40 @@
+div,
+p,
+h3 {
+  box-sizing: border-box;
+}
+
+.list {
+  display: flex;
+  width: 100%;
+  height: 150px;
+  text-align: center;
+  justify-content: center;
+}
+
+.list_item {
+  width: 200px;
+}
+
+.tablet{
+  display:flex;
+}
+
+@media screen and (max-width : 1200px) {
+  .tablet{
+    display: flex;
+  }
+  .list{
+    display: block;
+  }
+}
+
+@media screen and (max-width : 576px) {
+  .tablet{
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+
+/* 1200px / 992px / 768px / 576px */
