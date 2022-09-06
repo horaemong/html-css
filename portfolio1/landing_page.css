@@ -4,13 +4,14 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+table,
+th,
+td,
+i,
+div {
   margin: 0px;
   padding: 0px;
-  box-sizing: border-box;
-}
-
-div {
   box-sizing: border-box;
 }
 
@@ -92,4 +93,155 @@ div {
 .offer {
   text-align: center;
   padding: 40px;
+}
+
+.offer>p,
+.offer>h3 {
+  color: #eee;
+}
+
+.offer table {
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin: 20px auto;
+  text-align: center;
+}
+
+
+
+.offer td {
+  color: #eee;
+  padding: 10px;
+}
+
+.white {
+  color: #435EF8;
+  background-color: white;
+}
+
+.blue {
+  background-color: #435EF8;
+  color: white;
+}
+
+i {
+  font-size: 30px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
+  padding-top: 20px;
+}
+
+.can {
+  text-align: center;
+  padding: 25px;
+}
+
+.can p {
+  margin: 0px;
+  margin-top: 15px;
+}
+
+.img_container {
+  display: flex;
+  width: 80%;
+  margin: 0px auto;
+  flex-direction: row;
+  /*임시*/
+  margin-bottom: 100px;
+  flex-wrap: wrap;
+
+}
+
+.img_item {
+  width: 100%;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.img_wrap {
+  width: 50%;
+  position: relative;
+}
+
+.img_wrap>img {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.overlay {
+  position: absolute;
+  /* color: #eee; */
+  width: 100%;
+  left: 8%;
+  top: 20%;
+  color: #eee;
+}
+
+.overlay>p {
+  padding-top: 25px;
+  padding-right: 5px;
+}
+
+.black0_5 {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.bl0_5 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.anim_wrap {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  z-index: 5;
+}
+
+.anim {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: solid white 0px;
+  transition: all 0.5s;
+}
+
+.anim_wrap:hover .anim {
+  border: solid white 30px;
+}
+
+.sns_img_container {
+  display: flex;
+  margin-left: 37.5%;
+
+  text-align: center;
+}
+
+.sns_img {
+  margin: 10px;
+}
+
+.logo {
+  color: black;
+  text-align: center;
+  width: 10%;
+  margin-top: 10px;
+  margin-left: 43%;
+  vertical-align: middle;
+  margin-bottom: 20px;
+}
+
+.logo tr:nth-child(1) i {
+  width: 40px;
+  height: 40px;
+
+}
+
+.logo p {
+  margin-bottom: 0px;
 }
