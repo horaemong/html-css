@@ -1,0 +1,31 @@
+.btn_blue{
+  background-color: skyblue;
+  color: white;
+  padding: 10px;
+  border-width: 0px;
+  border-radius: 5px;
+  margin: 30%;
+}
+
+.btn_blue:hover{
+  animation-name: shake;
+  animation-duration: 0.4s;
+}
+
+@keyframes shake{
+  0%{
+    transform: rotate(0deg);
+  }
+  25%{
+    transform: rotate(-10deg);
+  }
+  50%{
+    transform: rotate(10deg);
+  }
+  75%{
+    transform: rotate(-10deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }
+}

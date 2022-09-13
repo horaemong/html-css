@@ -1,0 +1,38 @@
+.plus {
+  font-size: 60px;
+  text-align: center;
+  display: inline;
+}
+
+.plus:hover {
+  -webkit-animation-name: rotate;
+          animation-name: rotate;
+  -webkit-animation-duration: 0.9s;
+          animation-duration: 0.9s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  40% {
+    transform: rotate(-20deg);
+  }
+  100% {
+    transform: scale(1.3) rotate(45deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  40% {
+    transform: rotate(-20deg);
+  }
+  100% {
+    transform: scale(1.3) rotate(45deg);
+  }
+}/*# sourceMappingURL=homework2.css.map */

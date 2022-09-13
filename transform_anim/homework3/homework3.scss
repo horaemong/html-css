@@ -1,0 +1,62 @@
+body, h3{
+  margin: 0px;
+}
+
+.menu{
+  color: white;
+  background-color: black;
+  width: 50%;
+  padding: 20px;
+  height: 600px;
+  transform: translateX(-78%);
+  text-align: end;
+}
+
+.menu{
+  h3{
+    margin-top: 50px;
+    width: 100%;
+  }
+  p{
+    text-align: center;
+    transition: all 1s;
+  }
+}
+
+.menu:hover{
+  animation-name: menu;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  text-align: center;
+  p{
+    animation-name: p;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+}
+
+
+@keyframes menu{
+  0%{
+    transform: translateX(-78%);
+  }
+  100%{
+    transform: translateX(0%);
+  }
+}
+
+@keyframes p{
+  0%{
+
+  }
+  30%{
+    transform: skewX(45deg) translateX(-20px);
+  }
+  60%{
+    transform: skewX(-20deg) translateX(70px);
+  }
+  100%{
+    transform: skewX(0deg) translateX(0px);
+  }
+}
+
