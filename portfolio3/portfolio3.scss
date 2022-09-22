@@ -1,4 +1,4 @@
-body, input{
+body, input, canvas{
   box-sizing: border-box;
 }
 
@@ -12,6 +12,10 @@ p{
   padding: 0px;
 }
 
+body{
+  background-color: #F9F9F9;
+}
+
 .gray{
   color: #808080;
 }
@@ -22,8 +26,8 @@ p{
 
 .nav{
   padding: 10px 20px;
-  background-color: #eee;
   vertical-align: middle;
+  background-color: white;
 }
 
 .search{
@@ -95,16 +99,134 @@ p{
 .sidebar{
   background-color: #494CB4;
   color: white;
-  width: 220px;
+  width: 180px;
   height: 100vh;
   position: fixed;
   left: 0px;
   top: 0px;
   padding-top: 30px;
+  padding-left: 25px;
   font-size: 20px;
+  transform: translateX(-120px);
+  transition: all 1s;
 }
 
-.sidebar_items_icon{
-  padding-left: 25px;
-  padding-right: 15px;
+// .sidebar_items_icon{
+//   padding-right: 15px;
+// }
+
+.sidebar_items_word{
+  position: relative;
+  transition: transform 0.75s;
+  transition-delay: 0.25s;
+}
+
+.dashboard_box{
+  background-color: white;
+  width: 90%;
+  border-radius: 5px;
+  
+}
+.dashboard_icon{
+  justify-content: center;
+}
+
+.dashboard_container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.border_skyblue{
+  border-left: #87CEEB solid 5px;
+}
+
+.border_lightgreen{
+  border-left: #40C95A solid 5px;
+}
+
+.border_blue{
+  border-left: #696CC0 solid 5px;
+}
+
+.border_yellow{
+  border-left: #FFCB54 solid 5px;
+}
+
+.graph{
+  width: 60%;
+  background-color: white;
+}
+
+.graph_name{
+  width: 100%;
+  background-color: #F9F9F9;
+  border: #eee solid 2px;
+}
+
+.task{
+  width: 35%;
+}
+
+.task_list{
+  background-color: white;
+  border: #eee solid 2px;
+}
+
+.list_icon{
+  display: none;
+  font-size: 30px;
+  text-align: end;
+}
+
+#myChart{
+  border-left: #eee solid 2px;
+  border-right: #eee solid 2px;
+  border-bottom: #eee solid 2px;
+}
+
+
+
+.sidebar:hover{
+  .sidebar_items_icon{
+    order: 1;
+  }
+  .sidebar_items_word{
+    transform: translateX(10px);
+    order: 2;
+  }
+  transform: translateX(0px);
+  
+}
+
+.search input:focus{
+  width: 400px;
+
+  .search_icon{
+    transform: translateX(150px);
+  }
+}
+
+
+
+@media screen and (max-width : 768px) {
+  .list_icon{
+    display: block;
+  }
+
+  .nav>div{
+    display: none;
+  }
+
+  .dashboard_container{
+    display: block;
+  }
+  .dashboard_box{
+    width: 100%;
+  }
+
+
+  .graph, .task{
+    float: none;
+    width: 100%;
+  }
 }
